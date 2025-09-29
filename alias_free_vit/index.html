@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alias-Free ViT</title>
+  <meta name="description" content="Alias-Free ViT project page: title, authors, and abstract." />
+  <meta property="og:title" content="Alias-Free ViT: Fractional Shift Invariance via Linear Attention" />
+  <meta property="og:description" content="Placeholder page for the Alias-Free ViT project with title, authors, and abstract." />
+  <meta property="og:url" content="https://hmichaeli.github.io/alias_free_vit/" />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Icon libraries to match main site -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">Alias-Free ViT</div>
+      <ul class="nav-links">
+        <li><a href="../index.html#publications">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="top">
+    <section>
+      <h1 class="section-title">Alias-Free ViT: Fractional Shift Invariance via Linear Attention</h1>
+      <p class="publication-authors">Hagay Michaeli, Daniel Soudry</p>
+  <p class="publication-authors">Technion · <span class="publication-venue">NeurIPS 2025</span></p>
+      <h2 style="margin-top: 1.5rem; font-size: 1.4rem; color: #2c3e50;">Abstract</h2>
+      <p class="publication-summary" style="margin-top: 0.5rem;">
+        Transformers have emerged as a competitive alternative to convnets in vision tasks, yet they lack the architectural inductive bias of convnets, which may hinder their potential performance.  
+        Specifically, Vision Transformers (ViTs) are not translation‑invariant and are more sensitive to minor image translations than standard convnets.
+        Previous studies have shown, however, that convnets are also not perfectly shift‑invariant, due to aliasing in down‑sampling and non‑linear layers. 
+        Consequently, anti‑aliasing approaches have been proposed to certify convnets translation robustness. 
+        Building on this line of work, we propose an Alias‑Free ViT, which combines two main components. 
+        First, it uses alias-free down‑sampling and non‑linearities. 
+        Second, it uses linear cross‑covariance attention that is shift‑invariant to both integer and fractional translations.
+        Our model maintains competitive performance in image classification and outperforms similar‑sized models in terms of robustness to adversarial translations.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/hmichaeli" title="GitHub" aria-label="GitHub"><i class="fab fa-github ai-2x"></i></a>
+        <a href="https://scholar.google.com/citations?user=O9I8GFgAAAAJ&hl=en" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar ai-2x"></i></a>
+        <a href="https://www.linkedin.com/in/hmichaeli" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin ai-2x"></i></a>
+      </div>
+      <p class="footer-text">&copy; 2025 Hagay Michaeli. This page uses the same minimal style as the main site.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for internal links (if any)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+    // Header shadow on scroll (same feel as main site)
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      header.style.boxShadow = window.scrollY > 100 ? '0 2px 20px rgba(0,0,0,0.2)' : '0 2px 5px rgba(0,0,0,0.1)';
+    });
+  </script>
+</body>
+</html>
