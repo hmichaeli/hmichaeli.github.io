@@ -228,6 +228,36 @@ section {
 /* Slightly tighter overall bottom padding (keep separation between items) */
 .publication-item { padding-bottom: 1.4rem; }
 
+/* Publication buttons with icons */
+.pub-buttons {
+    display: inline-flex;
+    gap: 0.5rem;
+    margin-left: 0.75rem;
+}
+
+.pub-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.85rem;
+    color: #3498db;
+    background-color: transparent;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.pub-btn:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.pub-btn i {
+    font-size: 1em;
+}
+
 .publication-title:hover, .course-title:hover {
     color: #3498db;
 }
